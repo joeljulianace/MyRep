@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Yahoo">
+
+ 
+<test name="Yahoo Mail Test">
+  <classes>
+    <class name="test.YahooTest"></class>
+  </classes>
+</test>
+
+<test name="Yahoo News Test">
+  <classes>
+    <class name="test.YahooNewsTest"></class>
+  </classes>
+  
+</test>
+
+<test name="Yahoo Registration Test">
+  <classes>
+    <class name="test.YahooRegistrationTest"></class>
+  </classes>
+</test>
+
+  <listeners>
+    <listener class-name="testng_listeners.CustomListener"/>
+  </listeners>
+  
+  <test name="Custom Listener Test">
+  <classes>
+    <class name="testng_listeners.LoginTest"></class>
+  </classes>
+</test>
+  
+</suite>

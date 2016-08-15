@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Yahoo">
+              <span class="suite-name border-passed">Yahoo</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Yahoo">
+                    <span>E:\Selenium\Module9\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Yahoo">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Yahoo">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Yahoo">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Yahoo">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Yahoo">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Yahoo">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Yahoo" class="hide-methods failed suite-Yahoo"> (hide)</a> <!-- hide-methods failed suite-Yahoo -->
+                      <a href="#" panel-name="suite-Yahoo" class="show-methods failed suite-Yahoo"> (show)</a> <!-- show-methods failed suite-Yahoo -->
+                    </span>
+                    <div class="method-list-content failed suite-Yahoo">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="testng_listeners.LoginTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Yahoo -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Yahoo" class="hide-methods passed suite-Yahoo"> (hide)</a> <!-- hide-methods passed suite-Yahoo -->
+                      <a href="#" panel-name="suite-Yahoo" class="show-methods passed suite-Yahoo"> (show)</a> <!-- show-methods passed suite-Yahoo -->
+                    </span>
+                    <div class="method-list-content passed suite-Yahoo">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="testng_listeners.LoginTest" hash-for-method="AdminLogin">AdminLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="test.YahooNewsTest" hash-for-method="testNews">testNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="test.YahooTest" hash-for-method="testReceiveMail">testReceiveMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="test.YahooRegistrationTest" hash-for-method="testRegister(user1, pass1, email1, city1)">testRegister(user1, pass1, email1, city1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="test.YahooRegistrationTest" hash-for-method="testRegister(user2, pass2, email2, city2)">testRegister(user2, pass2, email2, city2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="test.YahooRegistrationTest" hash-for-method="testRegister(user3, pass3, email3, city3)">testRegister(user3, pass3, email3, city3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Yahoo" title="test.YahooTest" hash-for-method="testSendMail">testSendMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Yahoo -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Yahoo" class="panel Yahoo">
+          <div class="suite-Yahoo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.YahooNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNews">
+                  </a> <!-- testNews -->
+                  <span class="method-name">testNews</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Yahoo-class-passed -->
+          <div class="suite-Yahoo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.YahooRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister(user1, pass1, email1, city1)">
+                  </a> <!-- testRegister(user1, pass1, email1, city1) -->
+                  <span class="method-name">testRegister</span>
+                  <span class="parameters">(user1, pass1, email1, city1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister(user2, pass2, email2, city2)">
+                  </a> <!-- testRegister(user2, pass2, email2, city2) -->
+                  <span class="method-name">testRegister</span>
+                  <span class="parameters">(user2, pass2, email2, city2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegister(user3, pass3, email3, city3)">
+                  </a> <!-- testRegister(user3, pass3, email3, city3) -->
+                  <span class="method-name">testRegister</span>
+                  <span class="parameters">(user3, pass3, email3, city3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Yahoo-class-passed -->
+          <div class="suite-Yahoo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testng_listeners.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdminLogin">
+                  </a> <!-- AdminLogin -->
+                  <span class="method-name">AdminLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [B] but found [A]
+	at testng_listeners.LoginTest.login(LoginTest.java:15)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Yahoo-class-passed -->
+          <div class="suite-Yahoo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.YahooTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testReceiveMail">
+                  </a> <!-- testReceiveMail -->
+                  <span class="method-name">testReceiveMail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSendMail">
+                  </a> <!-- testSendMail -->
+                  <span class="method-name">testSendMail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Yahoo-class-passed -->
+        </div> <!-- panel Yahoo -->
+        <div panel-name="test-xml-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Selenium\Module9\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Yahoo&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testng_listeners.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Yahoo Mail Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.YahooTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Yahoo Mail Test --&gt;
+  &lt;test name=&quot;Yahoo News Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.YahooNewsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Yahoo News Test --&gt;
+  &lt;test name=&quot;Yahoo Registration Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.YahooRegistrationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Yahoo Registration Test --&gt;
+  &lt;test name=&quot;Custom Listener Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testng_listeners.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Custom Listener Test --&gt;
+&lt;/suite&gt; &lt;!-- Yahoo --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Yahoo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Yahoo Mail Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Yahoo News Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Yahoo Registration Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Custom Listener Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Yahoo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Yahoo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Yahoo');
+function tableData_Yahoo() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testNews')
+data.setCell(0, 2, 'test.YahooNewsTest')
+data.setCell(0, 3, 6);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testRegister')
+data.setCell(1, 2, 'test.YahooRegistrationTest')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSendMail')
+data.setCell(2, 2, 'test.YahooTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testReceiveMail')
+data.setCell(3, 2, 'test.YahooTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRegister')
+data.setCell(4, 2, 'test.YahooRegistrationTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testRegister')
+data.setCell(5, 2, 'test.YahooRegistrationTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'login')
+data.setCell(6, 2, 'testng_listeners.LoginTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'AdminLogin')
+data.setCell(7, 2, 'testng_listeners.LoginTest')
+data.setCell(7, 3, 0);
+window.suiteTableData['Yahoo']= { tableData: data, tableDiv: 'times-div-Yahoo'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 ms</span>
+              <div id="times-div-Yahoo">
+              </div> <!-- times-div-Yahoo -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Yahoo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Yahoo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.YahooTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initializeSelenium</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">openConnection</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testReceiveMail</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSendMail</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">closeConnection</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.YahooNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">xyz</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testNews</span>
+                <span class="method-start">117 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.YahooRegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRegister(user1, pass1, email1, city1)</span>
+                <span class="method-start">142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegister(user2, pass2, email2, city2)</span>
+                <span class="method-start">143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegister(user3, pass3, email3, city3)</span>
+                <span class="method-start">144 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng_listeners.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AdminLogin</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.YahooTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">shutDownSelenium</span>
+                <span class="method-start">170 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
